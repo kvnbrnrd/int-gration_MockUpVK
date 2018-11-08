@@ -13,11 +13,10 @@ main
     height: 1600px;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .fighter
 {
-    position: absolute;
-    top: 10%;
     font-size: 50px;
+    text-align: center;
 }
