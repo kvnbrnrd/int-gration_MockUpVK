@@ -6,6 +6,13 @@
 	font-family: 'blackoak';
 	src: url('BlackoakStd.otf') format('opentype'); 
 }
+html, body {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: helvetica, arial;
+}
 header
 {
     background-color: #AEE1F6;
@@ -19,7 +26,7 @@ main
 {
     background-image: url(femmePlage.jpg);
     position: relative;
-    height: 1600px;
+    height: 1583px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -36,4 +43,29 @@ main
 {
     text-align: center;
     padding-top: 4%;
+}
+
+article {
+    background-color: #c0434b;
+    color: black;
+    padding: 1rem;
+    font-family: 'algeria',serif;
+    font-size: 30px;
+    padding-top: 2%;
+}
+
+#adresse{
+    background-color: #c0434b;
+    color: black;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: 'algeria';
+    
+}
+footer{
+    background-color: #c0434b ;
+    padding: 1rem;
+    color: black;
+    font-weight: bolder;
+    
 }
