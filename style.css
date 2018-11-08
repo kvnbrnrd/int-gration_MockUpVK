@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'algeria';
+	src: url('ALGERIA.TTF') format('truetype'); 
+}
+@font-face {
+	font-family: 'blackoak';
+	src: url('BlackoakStd.otf') format('opentype'); 
+}
 header
 {
     background-color: #AEE1F6;
@@ -5,6 +13,7 @@ header
     width : 100%;
     text-align: center;
     padding-top: 1%;
+    font-weight: bolder;
 }
 main
 {
@@ -19,8 +28,9 @@ main
 {
     font-size: 50px;
     text-align: center;
-    font-weight: bold;
     padding-top: 2%;
+    font-family: 'blackoak';
+    transform: scale(.5, 1);
 }
 .barre
 {
