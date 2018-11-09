@@ -14,22 +14,26 @@
         <div id="logo">
             <img src="logocomplet.png">
         </div>
-        <div id="home">
-            <a href="#"><img src="home.png"></a><br>
-            HOME
-        </div>
-        <div id="products">
-            <a href="#"><img src="products.png"></a><br>
-            PRODUCTS
-        </div>
-        <div id="cart">
-            <a href="#"><img src="shopping-cart.png"></a><br>
-            SHOPPING CART
-        </div>
-        <div id="login">
-            <a href="#"><img src="user.png"></a><br>
-            LOGIN
-        </div>
+        <nav >
+            <div class="autogrid">
+                <div id="home">
+                    <a href="#"><img src="home.png"><br>
+                    HOME</a>
+                </div>
+                <div id="products">
+                    <a href="#"><img src="products.png"><br>
+                    PRODUCTS</a>
+                </div>
+                <div id="cart">
+                    <a href="#"><img src="shopping-cart.png"><br>
+                    SHOPPING CART</a>
+                </div>
+                <div id="login">
+                    <a href="#"><img src="user.png"><br>
+                    LOGIN</a>
+                </div>
+            </div>
+        </nav>
         <div id="burger">
             <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
             <script>
@@ -48,7 +52,7 @@
                     
                     // Define targets by their class or id
                     var button = document.querySelector('.nav-button');
-                    var target = document.querySelector('body > nav');
+                    var target = document.querySelector('header > nav');
                     
                     // click-touch event
                     if ( button ) {
@@ -64,14 +68,14 @@
                     toggleNav();
                     }());
                     </script>
-                    <nav>
+                    <!-- <nav>
                         <ul class="unstyled">
                                 <li>HOME</li>
                                 <li>PRODUCTS</li>
                                 <li>SHOPPING CART</li>
                                 <li>LOGIN</li>
                         </ul>
-                    </nav>
+                    </nav> -->
         </div>
 
     </header>

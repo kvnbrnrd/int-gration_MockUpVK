@@ -35,6 +35,10 @@ main
     background-repeat: no-repeat;
     background-size: cover;
 }
+a
+{
+    text-decoration: none;
+}
 @media screen and (max-width: 1600px) {
     main {
         background-size: 100%;
@@ -55,8 +59,22 @@ main
     #burger {
         display: initial
         }
-        #home, #products, #cart, #login {
+        nav {
             display: none;
+        }
+        nav.is-opened {
+            display: block;
+            z-index: 99;
+            height: 200px;
+            background-color: grey;
+            position: absolute;
+            right:10px;
+        }
+        nav img {
+            display: none;
+        }
+        nav div.autogrid {
+            display:block;
         }
   }
   @media screen and (max-width: 616px) {
