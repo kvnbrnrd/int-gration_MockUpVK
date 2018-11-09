@@ -11,24 +11,67 @@
 <body>
 
     <header class="autogrid">
-        <div>
+        <div id="logo">
             <img src="logocomplet.png">
         </div>
-        <div>
+        <div id="home">
             <a href="#"><img src="home.png"></a><br>
             HOME
         </div>
-        <div>
+        <div id="products">
             <a href="#"><img src="products.png"></a><br>
             PRODUCTS
         </div>
-        <div>
+        <div id="cart">
             <a href="#"><img src="shopping-cart.png"></a><br>
             SHOPPING CART
         </div>
-        <div>
+        <div id="login">
             <a href="#"><img src="user.png"></a><br>
             LOGIN
+        </div>
+        <div id="burger">
+            <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+            <script>
+                    /**!
+                    Navigation Button Toggle class
+                    */
+                    (function() {
+                    
+                    // old browser or not ?
+                    if ( !('querySelector' in document && 'addEventListener' in window) ) {
+                    return;
+                    }
+                    window.document.documentElement.className += ' js-enabled';
+                    
+                    function toggleNav() {
+                    
+                    // Define targets by their class or id
+                    var button = document.querySelector('.nav-button');
+                    var target = document.querySelector('body > nav');
+                    
+                    // click-touch event
+                    if ( button ) {
+                      button.addEventListener('click',
+                      function (e) {
+                        button.classList.toggle('is-active');
+                        target.classList.toggle('is-opened');
+                        e.preventDefault();
+                      }, false );
+                    }
+                    } // end toggleNav()
+                    
+                    toggleNav();
+                    }());
+                    </script>
+                    <nav>
+                        <ul class="unstyled">
+                                <li>HOME</li>
+                                <li>PRODUCTS</li>
+                                <li>SHOPPING CART</li>
+                                <li>LOGIN</li>
+                        </ul>
+                    </nav>
         </div>
 
     </header>
